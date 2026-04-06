@@ -1,0 +1,15 @@
+# Compiled Java classes
+target/
+*.class
+
+# Test Reports
+allure-results/
+allure-report/
+test-output/
+
+# IntelliJ Idea files
+.idea/
+*.iml
+
+# Log files
+*.log

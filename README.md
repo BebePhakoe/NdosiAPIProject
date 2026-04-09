@@ -1,25 +1,33 @@
-# Ndosi API Project
+Project Overview: Beloveds Test Automation Framework
+This repository contains a professional-grade API automation framework built to validate the Ndosi Simplified Automation platform. The project focuses on end-to-end validation of user lifecycles, role-based access control, and full-stack data integrity from the API to the database.
 
-This project contains the Ndosi API implementation.
+🚀 Key Features
+Hybrid Framework: Integrates RestAssured for API testing with JDBC for real-time MariaDB/MySQL database verification.
 
-## Getting Started
+Modular Architecture: Implements a decoupled design separating test logic, dynamic payload construction, and utility engines.
 
-### Prerequisites
-- Java 11 or higher
-- Maven
+Dynamic Data Handling: Uses Java Faker to generate unique user data, ensuring tests are repeatable and independent.
 
-### Building the Project
-```bash
-mvn clean compile
-```
+Automated Database Resets: Includes custom SQL maintenance scripts to ensure a "clean slate" for every test execution.
 
-### Running the Application
-```bash
-mvn exec:java
-```
+🛠️ Tech Stack
+Language: Java 11+
 
-## Contributing
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+Testing Engine: TestNG
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+API Client: RestAssured
+
+Database: MariaDB / MySQL (Managed via JDBC)
+
+Build Tool: Maven
+
+IDE: IntelliJ IDEA
+
+📂 Framework Structure
+common/: Global configurations and environment constants (e.g., Baseurl).
+
+utils/: The "Engine Room" containing DatabaseConnection and API Requests.
+
+PayloadBuilder/: A dedicated layer for constructing complex JSON strings for API endpoints.
+
+tests/: The "Command Center" containing the actual test scenarios (e.g., UserRegistration).
